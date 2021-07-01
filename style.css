@@ -9,7 +9,7 @@ body {
 
 :focus
 {
-    border: 1px solid red;
+    border: 1px solid black;
 }
 
 a,
@@ -841,13 +841,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -865,10 +865,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -877,8 +874,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1024,43 +1019,56 @@ h4 {
         width: 180px;
         height: 320px;
     }
-}
 
 /* Réajustement responsive */ 
 
-.site-navigation.nav.navbar-nav a
-{
-    background-color: white;
-}
+    .site-navigation.nav.navbar-nav a
+    {
+        background-color: white;
+    }
 
-.col-sm-6 img 
-{
-    width: 270px;
-    height: 270px;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+    .col-sm-6 img 
+    {
+        width: 270px;
+        height: 270px;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 
-.row.tight-width-whitespace.portfolio-row
-{
-    margin-bottom: 0;
-}
+    .row.tight-width-whitespace.portfolio-row
+    {
+        margin-bottom: 0;
+    }
 
-.row.tight-width-whitespace.portfolio-row
-{
-    margin-top: 0;
-}
+    .row.tight-width-whitespace.portfolio-row
+    {
+        margin-top: 0;
+    }
 
-.row.row-no-gutters.social
-{
-    display: flex;
-    justify-content: center;
-}
+    .row.row-no-gutters.social
+    {
+        display: flex;
+        justify-content: center;
+    }
 
-.row.row-no-gutters.social span
-{
-    padding: 10px 10px;
+    .row.row-no-gutters.social span
+    {
+        padding: 10px 10px;
+    }
+
+    .flex
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .order 
+    {
+        order: 2;
+    }
+
 }
 
 @media (max-width: 400px) {
